@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[metadata]
+name = "SAE-1979DA-Reformatter"
+url = "https://github.com/thatlarrypearson/SAE-1979DA-Reformatter"
+version = "0.3.0"
+description = "SAE 1979DA Reformatter"
+long_description = "file:README.md"
+authors = [
+    "Larry Pearson <no-reply@gmail.com>",
+]
+license = "MIT"
+readme = "README.md"
+python = "^3.7"
+homepage = "https://github.com/thatlarrypearson/SAE-1979DA-Reformatter"
+repository = "https://github.com/thatlarrypearson/SAE-1979DA-Reformatter"
+documentation = "https://github.com/thatlarrypearson/SAE-1979DA-Reformatter"
+keywords = ["obd", "telematics", "vehicle"]
+dependencies = [
+  'pint = 0.19.2',
+  'rich = 12.6.0',
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+

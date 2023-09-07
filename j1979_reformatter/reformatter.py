@@ -247,14 +247,14 @@ def sheet(xlsx, sheet_name:str, annex_header:list, annex_items:dict, verbose=Fal
     ws = xlsx[sheet_name]
     for key, value in annex_items.items():
         first_row, last_row = sheet_pid_search(ws, key, value)
-        # if verbose:
-        #     print(f"sheet: {value['annex']}/{key}/{value['name']}: first_row {first_row}, last_row {last_row}", file=stderr)
+        if verbose:
+            print(f"sheet: {value['annex']}/{key}/{value['name']}: first_row {first_row}, last_row {last_row}", file=stderr)
         value['pid_header'] = get_pid_header(ws, annex_header, key, value, verbose=verbose)
-        # if verbose:
-        #     print(f"sheet: {value['annex']}/{key}/{value['name']}: pid_header: {value['pid_header']}", file=stderr)
+        if verbose:
+            print(f"sheet: {value['annex']}/{key}/{value['name']}: pid_header: {value['pid_header']}", file=stderr)
         value['pid_fields'] = get_pid_fields(ws, annex_header, key, value)
-        # if verbose:
-        #     print(f"sheet: {value['annex']}/{key}/{value['name']}: pid_fields: {value['pid_fields']}", file=stderr)
+        if verbose:
+            print(f"sheet: {value['annex']}/{key}/{value['name']}: pid_fields: {value['pid_fields']}", file=stderr)
 
     return annex_items
 

@@ -28,7 +28,7 @@ The [SAE OBD Interface Standard SAE-J1979](https://www.sae.org/standards/content
 ## Usage
 
 ```bash
-$ python3.8 -m j1929_reformatter.reformatter --help
+$ python3.10 -m j1929_reformatter.reformatter --help
 usage: reformatter [-h] [--commands COMMANDS] [--annex_b ANNEX_B]
                    [--annex_g ANNEX_G] [--word WORD] [--xlsx XLSX] [--verbose]
 
